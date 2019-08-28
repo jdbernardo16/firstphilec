@@ -1,0 +1,95 @@
+/*=================================================================================
+|                                   Inquiry Form                                  |
+=================================================================================*/
+
+.inqry_frame1 {
+	padding-top: 100px;
+	.inqry_frame1-bg {
+		width: 100%;
+		height: 70vh;
+		background-color: $blue;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.frm-cntnr {
+		text-align: center;
+		* {
+			color: white;
+		}
+	}
+}
+
+.inqry_frame2 {
+	.frm-cntnr {
+		.inqry_frame2-title {
+			margin-bottom: 20px;
+			* {
+				font-family: karlabold;
+			}
+		}
+
+		.order-form-cntnr {
+			.input-hldr {
+				* {
+					font-family: karlareg;
+					font-size: 12px;
+				}
+				width: 25%;
+				input {
+					width: 93%;
+					box-sizing: border-box;
+					padding: 12px 20px;
+					border-radius: 20px;
+					border: 1px solid #46a3e5;
+					margin-bottom: 20px;
+				}
+
+				select {
+					background-color: #fff;
+					width: 97%;
+					box-sizing: border-box;
+					padding: 12px 20px;
+					border-radius: 20px;
+					border: 1px solid #46a3e5;
+					margin-bottom: 25px;
+					color: gray;
+					background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-512.png) no-repeat right;
+				    -webkit-appearance: none;
+				    background-position-x: 97%;
+				    background-size: 15px;
+				}
+
+				textarea {
+					padding: 12px 20px;
+					border-radius: 20px;
+					border: 1px solid #46a3e5;
+					margin-bottom: 25px;
+					width: 100%;
+					box-sizing: border-box;
+					height: 200px;
+				}
+
+				&.align-r {
+					text-align: right;
+				}
+
+				&.align-c {
+					text-align: center;
+				}
+
+				&.w100 {
+					width: 100%;
+					input {
+						width: 100%;
+					}
+				}
+			}
+
+			.btn-hldr {
+				text-align: center;
+			}
+		}
+	}
+}

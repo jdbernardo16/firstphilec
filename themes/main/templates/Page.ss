@@ -33,7 +33,7 @@
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 
         <!-- Fonts -->
-       <link href="https://fonts.googleapis.com/css?family=Cabin:400,600,700|Montserrat:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+        <link href="$ThemeDir/fonts/Karla.css" rel="stylesheet">
 
         <!-- Compiled CSS -->
         <link href="$ThemeDir/assets/app.min.css" rel="stylesheet">
@@ -140,28 +140,26 @@
         <script type="text/javascript" src="$ThemeDir/js/storelocator.js"></script>
 
         <!-- Maps -->
-         <% loop ContactDetails %>
              <script type="text/javascript">
-                    var mapLat = $Lat,
-                        mapLng = $Lng;
+                    var mapLat = 14.137244;
+                        mapLng = 121.135193;
 
                 var mapOptions = {
                     zoom: 19,
                     center: new google.maps.LatLng(mapLat, mapLng),
-                    // styles: [{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]
+                    styles: [{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]
                 };
 
-                var mapElement = document.getElementById('map-$ID');
+                var mapElement = document.getElementById('map');
                 var map = new google.maps.Map(mapElement, mapOptions);
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(mapLat, mapLng),
                     map: map,
-                    title: 'TECHNOLUX',
-                    icon: '$MapPin.Url',
+                    title: 'First Philec',
+                    // icon: '$MapPin.Url',
                     animation: google.maps.Animation.DROP,
                 });
             </script>
-            <% end_loop %>
 
                 
              <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"

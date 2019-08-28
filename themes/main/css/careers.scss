@@ -1,0 +1,386 @@
+/*=================================================================================
+|                                  Careers Page                                   |
+=================================================================================*/
+.crrs_frame1 {
+	.crrs_frame1-bg {
+		padding-top: 100px;
+		width: 100%;
+		height: 80vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		.frm-cntnr {
+			text-align: center;
+		}
+	}
+}
+
+.crrs_frame2 {
+	position: relative;
+	.crrs_frame2-vector {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 8vh;
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.frm-cntnr {
+		padding-top: 100px;
+		padding-bottom: 200px;
+
+		.important-side {
+			width: 50%;
+
+			.important-title {
+				width: 90%;
+				* {
+					color: $yellow;
+				}
+			}
+
+			.important-desc {
+				width: 90%;
+
+				h3 {
+					color: $blue;
+					font-weight: bold;
+				}
+
+			}
+		}
+
+		.image-side {
+			width: 50%;
+			position: relative;
+			.img {
+				float: right;
+				width: 90%;
+				height: 350px;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+
+.crrs_frame3 {
+	position: relative;
+	background-color: $blue;
+
+	::-webkit-scrollbar {
+		width: 5px;
+	}
+	/* Track */
+	::-webkit-scrollbar-track {
+	    background: gray;
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: #ccc; 
+	}
+
+
+
+	.frm-cntnr {
+		padding-top: 50px;
+		padding-bottom: 20px;
+		.crrs_frame3-img {
+			width: 30%;
+
+			.img-hldr {
+				width: 250px;
+				height: 320px;
+				background-position: top;
+				background-repeat: no-repeat;
+				background-size: cover;
+				border-radius: 10px;
+			}
+		}
+
+		.crrs_frame3-desc-hldr {
+			width: 70%;
+			height: 320px;
+			overflow: auto;
+			* {
+				color: white;
+			}
+
+			.crrs_frame3-title {
+				* {
+					color: $yellow;
+				}
+			}
+
+			.crrs_frame3-subtitle {
+				* {
+					font-weight: bold;
+				}
+
+			}
+
+			.crrs_frame3-details {
+				margin-bottom: 20px;
+			}
+
+			.crrs_frame3-desc {
+				width: 90%;
+				* {
+					font-style: italic;
+					font-size: 15px;
+				}
+
+			}
+		}
+	}
+}
+
+.crrs_frame4 {
+	position: relative;
+
+	.crrs_frame4-vector {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		width: 100%;
+		height: 10vh;
+	}
+
+	.frm-cntnr {
+		text-align: center;
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+
+	.sub-title {
+		* {
+			font-family: karlabold;
+			color: $blue;
+		}
+	}
+
+	.career-hldr {
+		padding-top: 50px;
+		text-align: left;
+
+		.career-card {
+			width: 31.33%;
+			margin-right: 3%;
+			border-radius: 15px;
+			overflow: hidden;
+			box-shadow: 0px 0px 5px 0px #ccc;
+			text-align: center;
+			margin-bottom: 30px;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			.career-img {
+				width: 100%;
+				height: 200px;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+			.career-details {
+				text-align: center;
+			}
+
+			.careertitle {
+				margin-top: 20px;
+				margin-bottom: 30px;
+				* {
+					font-family: karlabold;
+					color: $blue;
+				}
+			}
+
+			.btn-hldr {
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+}
+
+/*=================================================================================
+|                                  Career Modal                                   |
+=================================================================================*/
+
+#modal__careers {
+	padding: 0;
+	border-radius: 20px;
+	max-width: 1000px;
+	text-align: left;
+	* {
+		color: black;
+	}
+	.modal-close {
+		position: absolute;
+		left: auto;
+		right: -18px;
+		top: -18px;
+		cursor: pointer;
+
+		.fa-times-circle {
+			color: $yellow;
+			font-size: 40px;
+			background-color: white;
+			border-radius: 100%;
+			transition: all 0.34s ease;
+
+			&:hover {
+				color: red;
+			}
+		}
+	}
+
+	.modal-title {
+		margin-bottom: 20px;
+		* {
+			font-weight: bold;
+			color: $blue;
+		}
+	}
+
+	.career-desc-title {
+		* {
+			line-height: 25px;
+		}
+	}
+
+	.career-desc {
+		* {
+			line-height: 25px;
+		}
+	}
+
+	.career-detail-cntnr {
+		padding: 50px 0;
+		width: 50%;
+		background-color: #fafafa;
+		border-radius: 20px 0 0 20px;
+
+		.career-details {
+			width: 80%;
+			margin: auto;
+			padding-right: 20px;
+			max-height: 60vh;
+			overflow: auto;
+			text-align: left;
+
+			li {
+				margin-left: 18px;
+			}
+
+			li:before {
+				width: 5px;
+			}
+		}
+	}
+
+	.career-form-cntnr {
+		width: 50%;
+		padding: 50px 0;
+		.career-form {
+			width: 80%;
+			margin: auto;
+			max-height: 60vh;
+			overflow: auto;
+			padding-right: 20px;
+		}
+		.input-hldr {
+			* {
+				font-family: karlareg;
+				font-size: 12px;
+			}
+			width: 100%;
+			input {
+				width: 100%;
+				box-sizing: border-box;
+				padding: 12px 20px;
+				border-radius: 20px;
+				border: 1px solid #46a3e5;
+				margin-bottom: 25px;
+			}
+
+			select {
+				background-color: #fff;
+				width: 100%;
+				box-sizing: border-box;
+				padding: 12px 20px;
+				border-radius: 20px;
+				border: 1px solid #46a3e5;
+				margin-bottom: 25px;
+				color: gray;
+				background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-512.png) no-repeat right;
+			    -webkit-appearance: none;
+			    background-position-x: 97%;
+			    background-size: 15px;
+			}
+
+			textarea {
+				padding: 12px 20px;
+				border-radius: 20px;
+				border: 1px solid #46a3e5;
+				margin-bottom: 25px;
+				width: 100%;
+				box-sizing: border-box;
+				height: 200px;
+			}
+
+			&.align-r {
+				text-align: right;
+			}
+
+			&.w100 {
+				width: 100%;
+				input {
+					width: 100%;
+				}
+			}
+		}
+
+		.send-btn {
+			width: 100%;
+			text-align: right;
+			* {
+				color: white;
+			}
+		}
+
+		.btn-hldr {
+			text-align: center;
+		}
+
+		.modal__careers__upload {
+			margin-bottom: 25px;
+		}
+
+		.custom-file-upload {
+			.ptext {
+				width: 40%;
+				text-align: center;
+			}
+			.lbtn {
+				width: 60%;
+				text-align: center;
+				background-color: $blue;
+				color: white;
+				padding: 10px 0;
+				border-radius: 20px;
+				cursor: pointer;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,29 @@
+/*=================================================================================
+|                                Privacy Notice                                   |
+=================================================================================*/
+
+.pn_frame1 {
+	padding-top: 100px;
+	.frm-cntnr {
+		.privacy-title {
+			text-align: center;
+			* {
+				font-family: karlabold;
+				font-size: 36px;
+				text-transform: uppercase;
+				color: $blue;
+			}
+		}
+
+		.privacy-desc {
+			margin-bottom: 50px;
+			h5 {
+				font-size: 16px;
+				color: $blue;
+				font-weight: bold;
+			}
+		}
+
+
+	}
+}

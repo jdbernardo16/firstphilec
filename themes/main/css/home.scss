@@ -1,0 +1,422 @@
+/*=================================================================================
+|                                    Home Page                                    |
+=================================================================================*/
+
+.hm_frame1 {
+	padding-top: 100px;
+	position: relative;
+	.hm_frame1-vector {
+		position: absolute;
+		width: 100%;
+		height: 20vh;
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		bottom: 0;
+		right: 0;
+	}
+
+	.overlay {
+		width: 100%;
+		background-color: black;
+	}
+	.frm-cntnr {
+
+	}
+
+	.bg-img {
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.hm_frame1-content {
+		text-align: center;
+		height: 80vh;
+		* {
+			color: white;
+		}
+
+		strong {
+			color: $yellow !important;
+			font-family: karlareg;
+		}
+	}
+
+	.hm_frame1-header {
+		width: 35%;
+		margin: auto;
+		margin-bottom: 10px;
+		* {
+			font-size: 36px;
+		}
+	}
+
+	.hm_frame1-desc {
+		width: 40%;
+		margin: auto;
+	}
+}
+
+.hm_frame2 {
+	.frm-cntnr {
+		padding: 100px 0;
+
+	}
+
+	.hm_frame2-slider {
+		width: 100%;
+
+		.item-hldr {
+			.circle_img-hdlr {
+
+				.circle_img {
+					width: 130px;
+					height: 130px;
+					border-radius: 100%;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center;
+					margin: auto;
+				}
+
+			}
+
+			.desc {
+				text-align: center;
+				width: 80%;
+				margin: auto;
+				* {
+					color: $blue;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+.hm_frame2  .slick-next:before,
+.hm_frame2  .slick-prev:before {
+   display: none;
+}
+
+.hm_frame2 .slick-prev, 
+.hm_frame2 .slick-next {
+   height: 30px;
+   margin-top: -38px !important;
+
+
+}
+
+.hm_frame2 button {
+	&:hover {
+		i {
+			display: block !important;
+		}
+	}
+}
+
+
+.hm_frame2 button.slick-prev, 
+.hm_frame2 button.slick-next {
+   	border: none;
+   	background-color: transparent;
+   	box-shadow: none;
+   	padding: 0 !important;
+
+   	&:hover {
+   		color: $blue;
+   	}
+   }
+
+.hm_frame2 .slick-prev > i, 
+.hm_frame2 .slick-next > i {
+   font-size: 24px;
+   color: gray;
+   transition: all 0.34s ease;
+
+   &:hover {
+   	display: block !important;
+   	color: $blue;
+   }
+}
+
+.hm_frame2 .slick-prev {
+	left: -50px;
+}
+
+.hm_frame2 .slick-next {
+	right: -50px;
+}
+
+.hm_frame3 {
+	position: relative;
+	.frm-cntnr {
+		text-align: center;
+
+	}
+
+	.hm_frame3-vector {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-position: bottom;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 20vh;
+
+	}
+
+	.bg-img {
+		width: 100%;
+		height: 80vh;
+		background-color: gray;
+
+		.play-btn {
+			.fa-play-circle {
+				font-size: 50px;
+				filter: invert(100%);
+			}
+		}
+
+		.play-text {
+			color: white;
+			text-decoration: underline;
+		}
+
+		.frm_desc {
+			width: 300px;
+			margin: auto;
+			margin-bottom: 40px;
+		}
+	}
+
+	
+}
+
+.hm_frame4 {
+	.hm_frame4-bg {
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom;
+		background-color: $blue;
+	}
+	.frm-cntnr {
+		text-align: center;
+		padding: 100px 0;
+
+	}
+
+	.frm_desc {
+		width: 30%;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+
+	.slick-hldr {
+		width: 70%;
+		margin: auto;
+		margin-top: 50px;
+	}
+
+	.about-slider {
+	}
+
+	.slick-track {
+		padding-top: 90px;
+		height: 300px;
+	}
+
+	.slick-item {
+		width: 100%;
+		height: 100%;
+	}
+
+	.slick-img {
+		width: 100%;
+		height: 200px;
+		margin: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		transition: all .5s ease;
+	}
+
+
+	.slick-center {
+	    transform: scale(1.8) translateY(20px);
+	    z-index: 3;
+	}
+
+	.slick-item.slick-slide {
+		opacity: 0;
+		transition: all 0.5s ease;
+	}
+
+	.slick-item.slick-slide.slick-active {
+		opacity: 1;
+		z-index: 2;
+	}
+
+
+}
+
+.hm_frame4  .slick-next:before,
+.hm_frame4  .slick-prev:before {
+   display: none;
+}
+
+.hm_frame4 .slick-prev, 
+.hm_frame4 .slick-next {
+   height: 30px;
+   margin-top: -38px !important;
+
+
+}
+
+.hm_frame4 button {
+	&:hover {
+		i {
+			display: block !important;
+		}
+	}
+}
+
+
+.hm_frame4 button.slick-prev, 
+.hm_frame4 button.slick-next {
+   	border: none;
+   	background-color: transparent;
+   	box-shadow: none;
+   	padding: 0 !important;
+
+   	&:hover {
+   		color: $blue;
+   	}
+   }
+
+.hm_frame4 .slick-prev > i, 
+.hm_frame4 .slick-next > i {
+   font-size: 24px;
+   color: gray;
+   transition: all 0.34s ease;
+
+   &:hover {
+   	display: block !important;
+   	color: $blue;
+   }
+}
+
+.hm_frame4 .slick-prev {
+	left: -100px;
+}
+
+.hm_frame4 .slick-next {
+	right: -100px;
+}
+
+.hm_frame5 {
+	background-color: #083a5e;
+	padding-bottom: 100px;
+	position: relative;
+
+	.overlay {
+		position: absolute;
+		bottom: -70px;
+		right: 0;
+		width: 100%;
+		height: 20vh;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.frm-cntnr {
+		text-align: center;
+
+		* {
+			color: white;
+		}
+
+	}
+
+	.frame5_slider-hldr {
+		width: 100%;
+	}
+
+	.frame5_slider-item {
+		.slider-icon {
+			width: 150px;
+			height: 150px;
+			border-radius: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: auto;
+			margin-bottom: 10px;
+		}
+
+		.slider-title {
+			margin-bottom: 10px;
+			* {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.hm_frame6 {
+	.frm-cntnr {
+
+	}
+
+	.hm_frame6-slider {
+
+		.frame7_slider-cntnr {
+			width: 250px;
+			margin: auto;
+			overflow: hidden;
+			border-radius: 10px;
+
+		}
+
+		.image {
+			width: 100%;
+			height: 150px;
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.desc-hldr {
+			padding: 15px 0;
+			width: 100%;
+			background-color: #083a5e;
+			* {
+				color: white;
+			}
+
+			.desc {
+				width: 90%; 
+				margin: auto;
+				margin-bottom: 20px;
+			}
+
+			.readmore {
+				width: 90%;
+				margin: auto;
+
+				a {
+					font-weight: bold;
+					transition: all 0.34s ease;
+
+					&:hover {
+						color: $yellow;
+					}
+				}
+			}
+		}
+	}
+}
